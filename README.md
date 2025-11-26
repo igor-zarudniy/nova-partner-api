@@ -104,10 +104,12 @@ Create a `.env` file:
 
 ```
 PORT=3000
-GOOGLE_APPS_SCRIPT_URL=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+GOOGLE_APPS_SCRIPT_URL=https://script.google.com/macros/s/AKfycbyu81_jvRxwr3xVFXEH_7W914InpSLeJrkVtpZv5CDXtRKq6-5PjBLrzcEhnTUVKMUFlg/exec
 ```
 
-**Important:** Set `GOOGLE_APPS_SCRIPT_URL` in Netlify environment variables after deployment.
+**Important:** Set `GOOGLE_APPS_SCRIPT_URL` in Netlify environment variables after deployment:
+- Go to Netlify Dashboard → Site settings → Environment variables
+- Add variable: `GOOGLE_APPS_SCRIPT_URL` = `https://script.google.com/macros/s/AKfycbyu81_jvRxwr3xVFXEH_7W914InpSLeJrkVtpZv5CDXtRKq6-5PjBLrzcEhnTUVKMUFlg/exec`
 
 ## Deployment
 
