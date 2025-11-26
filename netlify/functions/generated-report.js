@@ -6,21 +6,7 @@ exports.handler = async (event, context) => {
     };
   }
 
-  const GOOGLE_APPS_SCRIPT_URL = process.env.GOOGLE_APPS_SCRIPT_URL;
-
-  if (!GOOGLE_APPS_SCRIPT_URL) {
-    return {
-      statusCode: 500,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({
-        success: false,
-        message: 'Google Apps Script URL not configured'
-      })
-    };
-  }
+  const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyu81_jvRxwr3xVFXEH_7W914InpSLeJrkVtpZv5CDXtRKq6-5PjBLrzcEhnTUVKMUFlg/exec';
 
   try {
     const data = JSON.parse(event.body || '{}');
